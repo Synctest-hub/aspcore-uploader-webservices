@@ -1,0 +1,6 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://localhost:7060/Uploader/Save", RemoveUrl = "https://localhost:7060/Uploader/Remove" };
+
+}
+<ejs-uploader id="UploadFiles" maxFileSize="double.MaxValue" asyncSettings="@asyncSettings"></ejs-uploader>
